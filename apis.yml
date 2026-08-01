@@ -1,8 +1,27 @@
 aid: pillpack
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pillpack.png
 name: PillPack
-description: 'PillPack is a company surfaced as a portfolio company of accel, crv, menlo-ventures, slow-ventures,
-  techstars and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'PillPack is a full-service mail-order pharmacy that sorts each customer''s
+  medications by date and time, packages them into clearly labeled dose packets, and
+  delivers them monthly with automatic refill management. The service coordinates
+  directly with prescribing doctors and insurance providers, charges no service fee
+  (customers pay only for their medications), and holds URAC Mail Service Pharmacy
+  accreditation with NCPDP E-Scribe capabilities out of Manchester, NH. Founded in
+  2013 and acquired by Amazon in 2018, PillPack is now operated by the same team of
+  licensed pharmacists behind Amazon Pharmacy, which the site increasingly directs
+  customers toward for same-day delivery and additional savings. PillPack is a
+  consumer-facing pharmacy service with no public developer or API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/pillpack/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Pharmacy
+- Healthcare
+- Health
+- Medication
+- Mail Order
+- Amazon
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pillpack-domain-security.yml
 - type: Website
-  url: http://www.pillpack.com
+  url: https://www.pillpack.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

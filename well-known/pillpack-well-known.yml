@@ -1,0 +1,15 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://www.pillpack.com/.well-known/*
+host: https://www.pillpack.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+notes: >-
+  PillPack is a consumer mail-order pharmacy (operated by the same team as
+  Amazon Pharmacy). No developer/API surface or .well-known discovery documents
+  are published. Absence is a valid, expected result for a consumer service.
