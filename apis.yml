@@ -63,6 +63,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/amazon/
+  name: Amazon
+  x-relationship: acquired
+  x-evidence: "Founded in 2013 and acquired by Amazon in 2018, PillPack is now operated by the same team of licensed pharmacists behind Amazon Pharmacy, which the site increasingly directs customers toward for same-day delivery and additional savings."
 - type: DomainSecurity
   url: security/pillpack-domain-security.yml
 - type: Website
